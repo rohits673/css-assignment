@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="main-container">
+            <div class="title-bar flex flex-space-between">
+                <div class="title">
+                    <h2>Consolidate</h2>
+                </div>
+                <div class="title-buttons">
+                    <button class="help-button title-bar-btn"></button>
+                    <button class="close-button title-bar-btn"></button>
+                </div>
+            </div>
+            <div class="content flex flex-col flex-space-between">
+                <p><u>F</u>unction:</p>
+                <select accesskey="f" class="function-option input-style">
+                    <option>Sum</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                </select>
+
+                <p><u>R</u>eference:</p>
+                <div class="reference flex flex-space-between">
+                    <input accesskey="r" type="text" class="reference-input input-style" />
+                    <button type="buttton" class="btn">Browse</button>
+                </div>
+                <p>All reference:</p>
+                <div class="reference flex flex-space-between">
+                    <textarea class="reference-textarea input-style" rows="4"></textarea>
+                    <div class="reference-textarea-button flex flex-col flex-space-between">
+                        <button accesskey="a" type="buttton" class="btn"><u>A</u>dd</button>
+                        <button accesskey="d" type="buttton" class="btn"><u>D</u>elete</button>
+                    </div>
+                </div>
+                <div class="bottom-content flex">
+                    <fieldset class="level-checkbox">
+                        <legend class="level-checkbox-heading">Use levels in</legend>
+                        <table>
+                            <tr>
+                                <td>
+                                    <input accesskey="t" class="checkbox" type="checkbox" id="top_row">
+                                    <label class="checkbox-label" for="top_row"><u>T</u>op row</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input accesskey="l" class="checkbox" type="checkbox" id="left_column">
+                                    <label class="checkbox-label" for="left_column"><u>L</u>eft column</label>
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                    <div class="create-links-box flex">
+                        <input accesskey="s" type="checkbox" class="checkbox" id="create_links">
+                        <label class="checkbox-label" for="create_links">Create links to <u>s</u>ource data</label>
+                    </div>
+                </div>
+                <div class="footer flex">
+                    <button type="buttton" class="btn">Ok</button>
+                    <button type="buttton" class="btn">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

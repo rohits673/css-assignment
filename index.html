@@ -17,29 +17,31 @@
                     <h2>Consolidate</h2>
                 </div>
                 <div class="title-buttons">
-                    <button class="help-button title-bar-btn"></button>
-                    <button class="close-button title-bar-btn"></button>
+                    <button type="button" id="help_btn" name="titlebtn" class="help-button title-bar-btn"></button>
+                    <button type="button" id="close_btn" name="titlebtn" class="close-button title-bar-btn"></button>
                 </div>
             </div>
             <div class="content flex flex-col flex-space-between">
-                <p><u>F</u>unction:</p>
-                <select accesskey="f" class="function-option input-style">
-                    <option>Sum</option>
-                    <option>Option 2</option>
-                    <option>Option 3</option>
+                <label for="functions"><u>F</u>unction:</label>
+                <select accesskey="f" name="functions" id="functions" class="function-option input-style">
+                    <option value="sum">Sum</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
                 </select>
 
                 <p><u>R</u>eference:</p>
                 <div class="reference flex flex-space-between">
                     <input accesskey="r" type="text" class="reference-input input-style" />
-                    <button type="buttton" class="btn">Browse</button>
+                    <button type="buttton" name="browsebtn" id="browse_btn" class="btn">Browse</button>
                 </div>
                 <p>All reference:</p>
                 <div class="reference flex flex-space-between">
                     <textarea class="reference-textarea input-style" rows="4"></textarea>
                     <div class="reference-textarea-button flex flex-col flex-space-between">
-                        <button accesskey="a" type="buttton" class="btn"><u>A</u>dd</button>
-                        <button accesskey="d" type="buttton" class="btn"><u>D</u>elete</button>
+                        <button accesskey="a" type="buttton" name="referencebtn" id="add_btn"
+                            class="btn"><u>A</u>dd</button>
+                        <button accesskey="d" type="buttton" name="referencebtn" id="delete_btn"
+                            class="btn"><u>D</u>elete</button>
                     </div>
                 </div>
                 <div class="bottom-content flex">
@@ -65,8 +67,8 @@
                     </div>
                 </div>
                 <div class="footer flex">
-                    <button type="buttton" class="btn">Ok</button>
-                    <button type="buttton" class="btn">Close</button>
+                    <button type="buttton" name="footerbtn" id="ok_btn" class="btn">Ok</button>
+                    <button type="buttton" name="footerbtn" id="close_btn" class="btn">Close</button>
                 </div>
             </div>
         </div>

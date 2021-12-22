@@ -17,8 +17,8 @@
                     <h2>Consolidate</h2>
                 </div>
                 <div class="title-buttons">
-                    <button type="button" id="help_btn" name="titlebtn" class="help-button title-bar-btn"></button>
-                    <button type="button" id="close_btn" name="titlebtn" class="close-button title-bar-btn"></button>
+                    <button type="button" id="help_btn" name="help_btn" class="help-button title-bar-btn"></button>
+                    <button type="button" id="close_btn" name="close_btn" class="close-button title-bar-btn"></button>
                 </div>
             </div>
             <div class="content flex flex-col flex-space-between">
@@ -31,15 +31,18 @@
 
                 <p><u>R</u>eference:</p>
                 <div class="reference flex flex-space-between">
-                    <input accesskey="r" type="text" class="reference-input input-style" />
-                    <button type="buttton" name="browsebtn" id="browse_btn" class="btn">Browse</button>
+                    <input accesskey="r" name="ref_input" id="ref_input" type="text"
+                        class="reference-input input-style" />
+                    <button type="buttton" accesskey="b" name="browse_btn" id="browse_btn"
+                        class="btn"><u>B</u>rowse...</button>
                 </div>
                 <p>All reference:</p>
                 <div class="reference flex flex-space-between">
                     <textarea class="reference-textarea input-style" rows="4"></textarea>
                     <div class="reference-textarea-button flex flex-col flex-space-between">
-                        <button accesskey="a" type="buttton" name="referencebtn" id="add_btn" class="btn"><u>A</u>dd</button>
-                        <button accesskey="d" type="buttton" name="referencebtn" id="delete_btn" class="btn"><u>D</u>elete</button>
+                        <button accesskey="a" type="buttton" name="add_btn" id="add_btn" class="btn"><u>A</u>dd</button>
+                        <button accesskey="d" type="buttton" name="delete_btn" id="delete_btn"
+                            class="btn"><u>D</u>elete</button>
                     </div>
                 </div>
                 <div class="bottom-content flex">
@@ -48,25 +51,26 @@
                         <table>
                             <tr>
                                 <td>
-                                    <input accesskey="t" class="checkbox" type="checkbox" id="top_row">
+                                    <input accesskey="t" name="top_row" id="top_row" class="checkbox" type="checkbox">
                                     <label class="checkbox-label" for="top_row"><u>T</u>op row</label>
                                 </td>
                             </tr>
                             <tr>
-                                <td><input accesskey="l" class="checkbox" type="checkbox" id="left_column">
+                                <td><input accesskey="l" class="checkbox" type="checkbox" name="left_column"
+                                        id="left_column">
                                     <label class="checkbox-label" for="left_column"><u>L</u>eft column</label>
                                 </td>
                             </tr>
                         </table>
                     </fieldset>
                     <div class="create-links-box flex">
-                        <input accesskey="s" type="checkbox" class="checkbox" id="create_links">
+                        <input accesskey="s" type="checkbox" class="checkbox" name="create_links" id="create_links">
                         <label class="checkbox-label" for="create_links">Create links to <u>s</u>ource data</label>
                     </div>
                 </div>
                 <div class="footer flex">
-                    <button type="buttton" name="footerbtn" id="ok_btn" class="btn">Ok</button>
-                    <button type="buttton" name="footerbtn" id="close_btn" class="btn">Close</button>
+                    <button type="buttton" name="ok_btn" id="ok_btn" class="btn">OK</button>
+                    <button type="buttton" name="close_btn" id="close_btn" class="btn">Close</button>
                 </div>
             </div>
         </div>

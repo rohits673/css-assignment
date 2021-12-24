@@ -90,13 +90,13 @@
   resize: none;
 }
 
-.level-checkbox {
+.label-checkbox {
   padding: 5px;
   border: 1px solid lightgray;
   border-radius: 5px;
 }
 
-.level-checkbox-heading {
+.label-checkbox-heading {
   color: #003cd3;
 }
 

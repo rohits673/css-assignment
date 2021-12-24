@@ -24,9 +24,9 @@
             <div class="content flex flex-col flex-space-between">
                 <label for="functions"><u>F</u>unction:</label>
                 <select accesskey="f" name="functions" id="functions" class="function-option input-style">
-                    <option value="sum">Sum</option>
-                    <option value="option2">Option 2</option>
-                    <option value="option3">Option 3</option>
+                    <option value="1">Sum</option>
+                    <option value="2">Subtract</option>
+                    <option value="3">Multiply</option>
                 </select>
 
                 <p><u>R</u>eference:</p>
@@ -48,20 +48,20 @@
                 <div class="bottom-content flex">
                     <fieldset class="level-checkbox">
                         <legend class="level-checkbox-heading">Use levels in</legend>
-                        <table>
-                            <tr>
-                                <td>
+                        <div class="table">
+                            <div class="table-row">
+                                <div class="table-data">
                                     <input accesskey="t" name="top_row" id="top_row" class="checkbox" type="checkbox">
                                     <label class="checkbox-label" for="top_row"><u>T</u>op row</label>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><input accesskey="l" class="checkbox" type="checkbox" name="left_column"
-                                        id="left_column">
+                                </div>
+                            </div>
+                            <div class="table-row">
+                                <div class="table-data">
+                                    <input accesskey="l" class="checkbox" type="checkbox" name="left_column" id="left_column">
                                     <label class="checkbox-label" for="left_column"><u>L</u>eft column</label>
-                                </td>
-                            </tr>
-                        </table>
+                                </div>
+                            </div>
+                        </div>
                     </fieldset>
                     <div class="create-links-box flex">
                         <input accesskey="s" type="checkbox" class="checkbox" name="create_links" id="create_links">
